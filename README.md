@@ -3,7 +3,7 @@
 A fast, secure, and modern password generator with one-click downloading.
 
 ## 🚀 Live Demo
-[https://yourusername.github.io/secure-password-generator/](link)
+https://secure-password-generator-psi.vercel.app
 
 ## ✨ Features
 - Generate passwords 6-30 characters long
