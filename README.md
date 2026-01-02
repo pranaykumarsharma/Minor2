@@ -7,7 +7,7 @@ A fast, secure, and modern password generator with one-click downloading.
 
 ## ✨ Features
 - Generate passwords 6-30 characters long
-- Customize character sets (uppercase, lowercase, numbers,special characters)
+- Customize character sets (uppercase, lowercase, numbers, special characters)
 - Copy to clipboard instantly
 - Works offline - no data stored
 
