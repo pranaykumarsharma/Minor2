@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="background.mp4" type="video/mp4">
+            
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="glass-container">
+        <div class="header">
+            <h2>Generate Secure Key</h2>
+        </div>
+        
+        <div class="result-box">
+            <span class="terminal-prompt">>_</span>
+            <input type="text" id="passwordDisplay" placeholder="Awaiting Input..." readonly>
+            <button id="copyBtn" title="Copy to Clipboard">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="controls">
+            <div class="control-group slider-group">
+                <label for="lengthSlider">Length: <span id="lengthValue" class="cyan-text">12</span></label>
+                <input type="range" id="lengthSlider" min="6" max="30" value="12">
+            </div>
+
+            <div class="settings-grid">
+                <label class="custom-checkbox">
+                    Uppercase (A-Z)
+                    <input type="checkbox" id="includeUppercase" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="custom-checkbox">
+                    Lowercase (a-z)
+                    <input type="checkbox" id="includeLowercase" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="custom-checkbox">
+                    Numbers (0-9)
+                    <input type="checkbox" id="includeNumbers" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="custom-checkbox">
+                    Special Characters (!@#$)
+                    <input type="checkbox" id="includeSymbols" checked>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <button id="generateBtn">Generate New Password</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
